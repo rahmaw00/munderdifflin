@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande",
+               "Lucida Sans Unicode",
+               "Lucida Sans",
+               Verdana,
+               sans-serif;
+
+}
+
+h1, p {
+  text-align: center;
+}
+
+#screen-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 10vh 90vh;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: 'nav nav nav' 'main main rightcol' 'main main rightcol';
+}
+
+nav {
+  text-align: center;
+  color: hotpink;
+  text-transform: uppercase;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+}
+
+#screen-grid * {
+  padding: 2% 10%;
+}
+
+aside img {
+  height: auto;
+  width: 75%;
+}
+
+#screen-grid nav {
+  grid-area: nav;
+  background-color: lightpink;
+}
+
+#screen-grid section {
+  grid-area: main;
+  background-color: lightblue;
+}
+
+#screen-grid aside {
+  grid-area: rightcol;
+  background-color: peachpuff;
+}
