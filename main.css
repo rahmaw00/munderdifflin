@@ -1,52 +1,201 @@
 body {
   margin: 0;
-  font-family: "Lucida Grande",
-               "Lucida Sans Unicode",
-               "Lucida Sans",
-               Verdana,
-               sans-serif;
-
+  font-family: Optima, sans-serif;
 }
-
-h1, p {
-  text-align: center;
+/*
+#title {
+	margin-top: 25px;
+	font-size: 21px;
+	text-align: center;
+	-webkit-animation: fadein 2s;
+@keyframes title {
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
-
-#screen-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: 10vh 90vh;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-areas: 'nav nav nav' 'main main rightcol' 'main main rightcol';
+@-webkit-keyframes title {
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
-
+/* end of example
+.type {
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif; */
+#munder {
+	font-family: Optima, sans-serif;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+ol {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.title {
+	font-family: Optima, sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+p {
+	font-size: .5rem;
+}
+input[type="checkbox"] {
+	display: none;
+}
+.lbl-toggle {
+	display: block;
+	font-weight: bold;
+	font-family: Optima, sans-serif;
+	font-size: .7rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem;
+	cursor: pointer;
+	color: wheat;
+	background: tan;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+}
+.lbl-toggle:hover {
+	color: #7c5a0b;
+}
+.collapsible-content {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height .25s ease;
+}
+.collapsible-content .content-inner {
+	 background: blanchedAlmond;
+	 border-bottom: 1px solid burlyWood;
+   border-bottom-left-radius: 12px;
+	 border-bottom-right-radius: 12px;
+	 padding: .5rem 1rem;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+	max-height: 350px;
+}
+.description {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
 nav {
   text-align: center;
   color: hotpink;
   text-transform: uppercase;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+  font-family: Optima, sans-serif;
+  font-size: .7rem;
 }
-
 #screen-grid * {
   padding: 2% 10%;
 }
-
-aside img {
-  height: auto;
-  width: 75%;
-}
-
 #screen-grid nav {
   grid-area: nav;
-  background-color: lightpink;
+  background-color: burlyWood;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 1rem;
 }
-
+#screen-grid nav a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #7c5a0b;
+}
 #screen-grid section {
   grid-area: main;
-  background-color: lightblue;
+  background-color: antiqueWhite;
+  display: grid;
+  grid-template-rows: 20% 20% 60%;
+  grid-template-columns: 100%;
+  padding: 0;
+  margin: 0;
+}
+#screen-grid section h1{
+  padding: 0;
+  padding-top: 4%;
+  margin: 0;
+  font-size: 2rem;
+}
+#screen-grid section p{
+  padding: 0;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: 0;
+  font-size: .9rem;
+  text-align: justify;
+}
+#screen-grid section h3{
+  padding: 0;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: 0;
+  font-family:
+}
+#screen-grid section img{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #screen-grid aside {
   grid-area: rightcol;
-  background-color: peachpuff;
+  background-color: wheat;
 }
+#screen-grid footer {
+  grid-area: footer;
+  background-color: burlyWood;
+}
+/*
+#screen-grid footer {
+	grid-area: footer;
+	background-color: white;
+}
+*/
+h1, p {
+  text-align: center;
+}
+img {
+	object-fit: scale-down;
+	width: 100%;
+	max-height: 50%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+#portraits{
+  padding: 0;
+  display: flex;
+  margin-top: 8%;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+#portraits img {
+  max-height: 35%;
+  object-fit: ;
+}
+#screen-grid {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 7vh 80vh 13vh;
+	grid-template-columns: ;
+	/* grid-template-columns: 66% 33% */
+	grid-template-areas: 'nav nav nav' 'main main rightcol' 'footer footer footer';
+}
+footer {
+   font-size: .5rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+/*
+#screen-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 8vh 80vh 12vh;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-areas: 'nav nav nav' 'main main rightcol' 'main main rightcol' 'footer footer footer';
+}
+*/

@@ -1,29 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <title></title>
-  </head>
-  <body>
-    <div id="screen-grid">
-      <nav>
-        <a href="">Our Story</a>
-        <a href="#">Who We Are</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <section>
-        <h1 id="title">Munder Difflin</h1>
-        <p id="paragraph">We are an independent paper company committed to providing ethically-sourced paper items at a low cost to our customers. We believe the decision to use ________ paper should not be a burden to your pockets.</p>
-      </section>
-      <aside>
-        <h4>Other articles</h4>
-        <img src="http://lorempixel.com/400/200/sports">
-        <img src="http://lorempixel.com/400/200/sports">
-        <img src="http://lorempixel.com/400/200/sports">
-        <img src="http://lorempixel.com/400/200/sports">
-      </aside>
-    </div>
-    <script src="main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <title></title>
+</head>
+<body>
+  <script>
+    document.body.className = 'fade';
+  </script>
+  <div id="screen-grid">
+    <nav>
+      <a href="">Our Story</a>
+      <a href="#">Who We Are</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <section>
+      <h1 id="munder" class="animated zoomIn">Munder Difflin</h1>
+      <div>
+        <h3 class="title" class="animated zoomIn">Our Mission</h3
+        <p id="intro">We are an independent paper company committed to providing ethically-sourced paper items at a low cost to our customers. We believe the decision to use quality paper should not be a burden to your pockets. Our dedication to the notion that quality should not be sacrificed for price results in loyal customers. We provide our customers with various types of paper, and we are currently offering are bond, uncoated, glass coated, silk coated, matte coated, recycled, watermarked.</p>
+      </div>
+      <div id="portraits">
+        <img src="https://welcometotwinpeaks.com/wp-content/uploads/Dale-Cooper-by-Chris-Evenhuis.jpg"/>
+        <img src="https://welcometotwinpeaks.com/wp-content/uploads/Audrey-Horne-by-Chris-Evenhuis.jpg"/>
+        <img src="https://welcometotwinpeaks.com/wp-content/uploads/Shelly-Johnson-by-Chris-Evenhuis.jpg"/>
+      </div>
+      <!-- <div id="quiz"></div>
+      <button id="submit">Submit</button>
+      <div id="results"></div> -->
+      <!-- <ul style="list-style: none">
+			<li>For the office...</li>
+				<p>Try our uncoated, bond, watermarked, silk and gloss options. </p>
+		</ul> -->
+    </section>
+    <aside>
+      <h4 class="title">Varieties We Carry</h4>
+      <div class="wrap-collapsible">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle">Bond</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>This type of paper is stronger and more durable than the average sheet of paper. Instead of being made from low grade wood pulp, it is mostly made up of rag pulp.</p>
+          </div>
+        </div>
+        <input id="collapsible2" class="toggle" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle">Gloss Coated</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Gloss paper is typically used for flyers and brochures as it has a high shine. As the ink dries well there is no need for a seal varnish as the ink does not rub off.</p>
+          </div>
+        </div>
+        <input id="collapsible3" class="toggle" type="checkbox">
+        <label for="collapsible3" class="lbl-toggle">Matte Coated</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Matte paper is the opposite to gloss – it is coated with a matte finish to produce a paper that isn’t shiny, preventing glare. This type of paper is perfect for reports, flyers and leaflets.</p>
+          </div>
+        </div>
+        <input id="collapsible4" class="toggle" type="checkbox">
+        <label for="collapsible4" class="lbl-toggle">Recycled</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Made from re-used paper products, recycled paper is perfect for those who are trying to reduce their environmental impact. It can be used for most documents including reports, memo paper and forms.</p>
+          </div>
+        </div>
+        <input id="collapsible5" class="toggle" type="checkbox">
+        <label for="collapsible5" class="lbl-toggle">Silk Coated</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>The interim between gloss and matte, silk coated paper has a smooth silky coating, leaving it smooth to the touch but without the shine of glass paper. This type of paper can be used for many things such as magazines, books and
+              catalogues.</p>
+          </div>
+        </div>
+        <input id="collapsible6" class="toggle" type="checkbox">
+        <label for="collapsible6" class="lbl-toggle">Uncoated</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Typically found in most office printers, uncoated paper has no coating, making it excellent for ink receptivity and absorbency. As it is uncoated it has the advantage of being used by both printer and pen, ideal for forms, letterheads
+              and memo paper.</p>
+          </div>
+        </div>
+        <input id="collapsible7" class="toggle" type="checkbox">
+        <label for="collapsible7" class="lbl-toggle">Watermarked</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Used in high quality paper watermarked paper give a feel of luxury and high quality. To create its desired effect an impression is pressed into the paper by attaching a wire pattern. This type of paper is commonly used as a security
+              feature for important documents, including exam certificates.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      1725 Slough Avenue, Scranton, PA
+      <br />
+      Serving America Since 1949
+      <br />
+      Munder Difflin © Copyright 2019
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      document.body.className = '';
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
 </html>
